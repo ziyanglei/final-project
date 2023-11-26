@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  <link rel="icon" href="images/profile 2.png">
+
+  <title>Final Project</title>
+
+</head>
+
+<body>
+
+  <div class="skip"><a href="#main">Skip to Main Content</a></div>
+
+<header>
+    <div style="text-align:center;">
+    <a class="name" href="index.html">
+        <img src="images/name.png" style='width:140px;' alt="ziyanglei's signature">
+        
+    </a>
+    </div>
+
+</header>
+
+<main id="main">
+    <div>
+        <div class="linkedinplay-btn">
+
+        <img class="profile-photo" src="images/profile 2.png" style="border-radius: 20%; width: 160px; height: 180px;"
+        onclick="showPopup('images/linkedin.jpg')"
+        alt="a memoji of the deisgner of this website">
+        <div id="popup" style="display:none">
+            <div class="popup-content">
+              <img id="popup-image" src="" alt="A male looking upward">
+              <div class="popup-text">
+                <p>My Linkedin Profile Picture</p>
+              </div>
+              <button id="close-clk" onclick="hidePopup()">Close</button>
+            </div>
+          </div>
+
+
+        <h2>Leo Lei</h2>
+        <ul class="bio">
+            <li>Architecture, HCI</li>
+            <li>Male</li>
+            <li>April 7th, 1999</li>
+          </ul>
+        </div>
+    </div>
+
+    <div class="three-column-grid">
+        <div class="module">
+            <span style='font-size:45px;'>&#119136;</span>
+            <p class="module-p">Immersing myself in the world of music brings me immeasurable joy and fulfillment; it's not just a pastime, but a profound passion that resonates deeply within me, connecting me to the essence of life. </p>
+            <a class="know-more" href="music.html">MUSIC</a>
+        </div>
+
+        <div class="module">
+            <span style='font-size:45px;'>&#127918;</span>
+            <p class="module-p">Gaming is my absolute passion; the immersive worlds, challenging quests, and the camaraderie of online communities create an exhilarating escape that I cherish with boundless enthusiasm</p>
+            <a class="know-more" href= "game.html">GAME</a>
+        </div>
+
+        <div class="module">
+            <span style='font-size:45px;'>&#9992;</span>
+            <p class="module-p">Traveling is my greatest passion; the exploration of new places and the thrill of embarking on unknown adventures fill my heart with an unparalleled sense of excitement and wonder. </p>
+            <a class="know-more" href="travel.html">TRAVEL</a>
+        </div>
+
+    </div>
+</main>
+
+<footer>
+    <p>ⒸZiyang Lei 2023</p>
+</footer>
+
+</body>
+<script src="final.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // Add smooth scrolling when clicking on the skip link
+    document.querySelector('.skip a').addEventListener('click', function (event) {
+      event.preventDefault();
+
+      const targetId = this.getAttribute('href').substring(1);
+      const targetElement = document.getElementById(targetId);
+
+      if (targetElement) {
+        targetElement.scrollIntoView({
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+</script>
+</html>

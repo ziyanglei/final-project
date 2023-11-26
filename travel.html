@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  <link rel="icon" href="images/profile 2.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-ez4/JYEso7a4GkRA5/kF5No+IiAaWu2ig4+kFmFcYy2bHztL1aWrwXc+dKr6qD6g"
+    crossorigin="anonymous">
+  <title>Travel</title>
+</head>
+
+<body>
+
+    <div class="skip"><a href="#main">Skip to Main Content</a></div>
+
+  <header>
+    <div style="text-align:center;">
+      <a class="logo" href="index.html">
+        <img src="images/name.png" style='width:140px;' alt="ziyanglei's signature">
+      </a>
+    </div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="music.html">Music</a></li>
+        <li><a href="game.html">Game</a></li>
+        <li><a class="current" href="travel.html">Travel</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <div class="button">
+      <div style="display: flex; justify-content: center; align-items: center;">
+        <button id="play-pause-btn" class="play-btn" aria-label="Play">
+          &#9654;
+        </button>
+      </div>
+      <audio id="audio-player" src="mp3/travel.mp3"></audio>
+    </div>
+
+    <div class="heading">
+      <h1>Places I have visited</h1>
+      <p>Hover on the cards for details</p>
+    </div>
+
+    <div class="three-column-grid">
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="images/travel/japan.jpg" alt="Fuji mountain in Tokyo">
+            <h3>Japan</h3>
+          </div>
+          <div class="flip-card-back">
+            <div class="text-container">
+              <p>Fuji Mountain</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="images/travel/la.jpg" alt="Downtown of city of Los Angeles">
+            <h3>California, US</h3>
+          </div>
+          <div class="flip-card-back">
+            <div class="text-container">
+              <p> Downtown LA</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="images/travel/lv.webp" alt="Las Vegas Downtown, small Effiefl Tower">
+            <h3>Nevada, US</h3>
+          </div>
+          <div class="flip-card-back">
+            <div class="text-container">
+              <p> Las Vegas </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="images/travel/malaysia.jpg" alt="Malaysia Downtown, High-rise buildings">
+            <h3>Malaysia</h3>
+          </div>
+          <div class="flip-card-back">
+            <div class="text-container">
+              <p>Kuala Lumpur</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="images/travel/sf.jpg" alt="Golden Gate Bridge">
+            <h3>San Francisco</h3>
+          </div>
+          <div class="flip-card-back">
+            <div class="text-container">
+              <p>California, CA</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="images/travel/singapore.jpg" alt="CBD Singapore Area">
+            <h3>Singapore CBD</h3>
+          </div>
+          <div class="flip-card-back">
+            <div class="text-container">
+              <p>Singapore</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer>
+    <p>ⒸZiyang Lei 2023</p>
+  </footer>
+
+  <script src="final.js" defer></script>
+
+</body>
+
+</html>
